@@ -345,7 +345,7 @@ function renderMenu() {
 
       return `
         <article class="card glass-card menu-card" data-dish-id="${item.id}">
-          <div class="menu-card-visual">
+          <div class="menu-card-visual" style="background-image: url('${import.meta.env.BASE_URL}assets/menu/${item.image}'); background-size: cover; background-position: center;">
             <div class="card-category-svg">${svgIcon}</div>
             <div class="card-badges">${badgesHTML}</div>
             <div class="card-price">€${item.price.toFixed(2)}</div>
@@ -452,9 +452,9 @@ function openDishModal(dish: MenuItem) {
   }
 
   container.innerHTML = `
-    <div class="dish-detail-graphic">
-      <div class="card-category-svg" style="opacity: 0.2;">${svgIcon}</div>
-      <div class="card-badges" style="top:24px; left:24px;">${badgesHTML}</div>
+    <div class="dish-detail-graphic" style="background-image: url('${import.meta.env.BASE_URL}assets/menu/${dish.image}'); background-size: cover; background-position: center;">
+      <div class="card-category-svg" style="opacity: 0.2; z-index: 2;">${svgIcon}</div>
+      <div class="card-badges" style="top:24px; left:24px; z-index: 5;">${badgesHTML}</div>
     </div>
     <div class="dish-detail-body">
       <div class="dish-detail-title-row">
