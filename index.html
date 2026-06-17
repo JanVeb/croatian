@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="hr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <title>Srce Vatreno | Premium Croatian Restaurant & Tavern</title>
+    <meta name="description" content="Experience the authentic flavors of Croatia at Srce Vatreno. From traditional Dalmatian Peka to premium Pag sheep's cheese, enjoy fine dining in Zagreb." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- App Root Container -->
+    <div id="app" class="app-container">
+      
+      <!-- Top Navigation Header -->
+      <header class="header" id="main-header">
+        <div class="header-inner container">
+          <a href="#" class="logo-group" id="logo-link">
+            <svg class="flame-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo-text">Srce <span class="accent-text">Vatreno</span></span>
+          </a>
+
+          <!-- Navigation Links -->
+          <nav class="nav-menu" id="desktop-nav">
+            <a href="#home" class="nav-link active" data-nav="home">Home</a>
+            <a href="#story" class="nav-link" data-nav="story">Our Story</a>
+            <a href="#menu" class="nav-link" data-nav="menu">Menu</a>
+            <a href="#reservation" class="nav-link" data-nav="reservation">Reservations</a>
+          </nav>
+
+          <!-- Action Buttons / Quick Settings -->
+          <div class="header-actions">
+            <!-- Language Quick Picker -->
+            <div class="lang-picker-dropdown">
+              <button class="action-btn" id="lang-btn" aria-label="Select Language">
+                <span id="active-lang-flag">🇭🇷</span>
+                <span id="active-lang-label">HR</span>
+              </button>
+              <div class="dropdown-content" id="lang-dropdown">
+                <button data-lang="hr" class="lang-opt">🇭🇷 Hrvatski</button>
+                <button data-lang="en" class="lang-opt">🇬🇧 English</button>
+                <button data-lang="zh" class="lang-opt">🇨🇳 中文</button>
+              </div>
+            </div>
+
+            <!-- Settings Trigger -->
+            <button class="action-btn" id="settings-trigger" aria-label="Open Settings">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </button>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="action-btn mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="4" y1="6" x2="20" y2="6" id="line1"/>
+                <line x1="4" y1="12" x2="20" y2="12" id="line2"/>
+                <line x1="4" y1="18" x2="20" y2="18" id="line3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-drawer" id="mobile-drawer">
+          <nav class="mobile-nav">
+            <a href="#home" class="mobile-nav-link active" data-nav="home">Home</a>
+            <a href="#story" class="mobile-nav-link" data-nav="story">Our Story</a>
+            <a href="#menu" class="mobile-nav-link" data-nav="menu">Menu</a>
+            <a href="#reservation" class="mobile-nav-link" data-nav="reservation">Reservations</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Contents -->
+      <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+          <div class="hero-bg-overlay"></div>
+          <div class="hero-content container">
+            <h1 class="hero-title animate-in" id="hero-title">Okusi Vatre i Dalmatinske Tradicije</h1>
+            <p class="hero-subtitle animate-in delay-1" id="hero-subtitle">
+              U srcu Zagreba, spajamo strast domaće kuhinje s modernim kulinarskim umijećem.
+            </p>
+            <div class="hero-cta-group animate-in delay-2">
+              <a href="#menu" class="btn btn-primary" id="hero-menu-cta">Explore Menu</a>
+              <a href="#reservation" class="btn btn-outline" id="hero-res-cta">Book a Table</a>
+            </div>
+          </div>
+          <a href="#story" class="scroll-down-indicator" aria-label="Scroll Down">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </a>
+        </section>
+
+        <!-- Brand Story Section -->
+        <section id="story" class="story-section section-padding">
+          <div class="container grid-two-cols">
+            <div class="story-visual animate-on-scroll">
+              <div class="glowing-crest-card">
+                <svg class="crest-svg" viewBox="0 0 200 200" fill="none">
+                  <defs>
+                    <linearGradient id="crest-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ff4b2b" />
+                      <stop offset="100%" stop-color="#ff416c" />
+                    </linearGradient>
+                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feGaussianBlur stdDeviation="8" result="blur" />
+                      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                  </defs>
+                  <!-- Outer Shield -->
+                  <path d="M100 20 L160 50 C160 120 100 170 100 170 C100 170 40 120 40 50 Z" stroke="url(#crest-grad)" stroke-width="3" fill="none" filter="url(#glow)"/>
+                  <!-- Croatian Chequerboard Pattern Details -->
+                  <rect x="75" y="60" width="16" height="16" fill="#ff4b2b" opacity="0.8"/>
+                  <rect x="107" y="60" width="16" height="16" fill="#ff4b2b" opacity="0.8"/>
+                  <rect x="91" y="76" width="16" height="16" fill="#ffffff" opacity="0.9"/>
+                  <rect x="75" y="92" width="16" height="16" fill="#ff4b2b" opacity="0.8"/>
+                  <rect x="107" y="92" width="16" height="16" fill="#ff4b2b" opacity="0.8"/>
+                  <rect x="91" y="108" width="16" height="16" fill="#ffffff" opacity="0.9"/>
+                  <!-- Burning Heart center -->
+                  <path d="M100 145 C95 140 75 120 75 105 C75 95 83 88 92 88 C97 88 100 92 100 92 C100 92 103 88 108 88 C117 88 125 95 125 105 C125 120 105 140 100 145 Z" fill="url(#crest-grad)" filter="url(#glow)"/>
+                </svg>
+                <div class="crest-caption">EST. 2026</div>
+              </div>
+            </div>
+            <div class="story-text-content animate-on-scroll">
+              <h2 class="section-title text-gradient" id="story-title">Naša Priča</h2>
+              <p class="story-paragraph" id="story-text">
+                Nazvan po vatrenom duhu hrvatskog naroda i našoj strasti prema domaćoj kulinarskoj tradiciji, 'Srce Vatreno' slavi bogatstvo jadranskih plodova mora i rustikalnih jela iz svih regija Hrvatske. Od dalmatinske peke do slavonskog kulena, svako jelo priprema se s ljubavlju i autentičnim lokalnim namirnicama.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section section-padding">
+          <div class="container">
+            <h2 class="section-title text-center text-gradient" id="menu-title">Jelovnik</h2>
+            
+            <!-- Menu Filtering / Search Bar -->
+            <div class="menu-controls">
+              <!-- Category Filter Tabs -->
+              <div class="category-tabs" id="category-tabs-container">
+                <!-- Injected via TypeScript -->
+              </div>
+
+              <!-- Search and Dietary Filters -->
+              <div class="filter-actions-bar">
+                <div class="search-box">
+                  <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                  </svg>
+                  <input type="text" id="menu-search" placeholder="Pretraži jela..." />
+                </div>
+                
+                <!-- Dietary Toggles -->
+                <div class="dietary-toggles">
+                  <label class="switch-container">
+                    <input type="checkbox" id="veg-toggle" />
+                    <span class="switch-label" id="veg-toggle-label">Vegetarijansko</span>
+                  </label>
+                  <label class="switch-container">
+                    <input type="checkbox" id="spicy-toggle" />
+                    <span class="switch-label" id="spicy-toggle-label">Ljutkasto</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+              <!-- Loading Spinner / Dishes cards injected via main.ts -->
+              <div class="loader-container">
+                <div class="spinner"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section id="reservation" class="reservation-section section-padding">
+          <div class="container container-narrow">
+            <div class="card glass-card form-card animate-on-scroll">
+              <h2 class="card-title text-center text-gradient" id="res-title">Rezervirajte Stol</h2>
+              <p class="card-subtitle text-center" id="res-subtitle">Osigurajte svoje mjesto u gastronomskom srcu Hrvatske</p>
+              
+              <form id="reservation-form" class="res-form">
+                <!-- Status Banner -->
+                <div id="form-success-banner" class="success-banner hidden">
+                  <span id="res-success-msg">Rezervacija uspješna! Veselimo se Vašem dolasku u Srce Vatreno.</span>
+                </div>
+
+                <div class="form-group-grid">
+                  <div class="form-group">
+                    <label for="res-name-input" id="lbl-res-name">Ime i prezime</label>
+                    <input type="text" id="res-name-input" required placeholder="Ivan Horvat" />
+                  </div>
+                  <div class="form-group">
+                    <label for="res-email-input" id="lbl-res-email">E-mail adresa</label>
+                    <input type="email" id="res-email-input" required placeholder="ivan@email.hr" />
+                  </div>
+                </div>
+
+                <div class="form-group-grid grid-three-cols">
+                  <div class="form-group">
+                    <label for="res-date-input" id="lbl-res-date">Datum posjeta</label>
+                    <input type="date" id="res-date-input" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="res-time-input" id="lbl-res-time">Vrijeme</label>
+                    <select id="res-time-input" required>
+                      <option value="12:00">12:00</option>
+                      <option value="13:00">13:00</option>
+                      <option value="14:00">14:00</option>
+                      <option value="15:00">15:00</option>
+                      <option value="16:00">16:00</option>
+                      <option value="17:00">17:00</option>
+                      <option value="18:00">18:00</option>
+                      <option value="19:00">19:00</option>
+                      <option value="20:00">20:00</option>
+                      <option value="21:00">21:00</option>
+                      <option value="22:00">22:00</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="res-guests-input" id="lbl-res-guests">Broj gostiju</label>
+                    <input type="number" id="res-guests-input" min="1" max="20" value="2" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-notes-input" id="lbl-res-notes">Posebne napomene</label>
+                  <textarea id="res-notes-input" rows="3" placeholder="Alergije, rođendani..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="res-submit-btn">Rezerviraj stol</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Settings Panel Modal -->
+      <div class="modal-overlay hidden" id="settings-modal">
+        <div class="modal-card glass-card">
+          <div class="modal-header">
+            <h3 class="modal-title" id="settings-title-label">Postavke</h3>
+            <button class="close-modal" id="settings-close" aria-label="Close Settings">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="settings-group">
+              <label id="settings-lang-label" class="setting-label">Jezik / Language</label>
+              <div class="lang-selector-grid">
+                <button class="lang-selector-btn active" data-lang-opt="hr">🇭🇷 Hrvatski</button>
+                <button class="lang-selector-btn" data-lang-opt="en">🇬🇧 English</button>
+                <button class="lang-selector-btn" data-lang-opt="zh">🇨🇳 中文</button>
+              </div>
+            </div>
+            <div class="settings-group">
+              <label id="settings-theme-label" class="setting-label">Tema / Appearance</label>
+              <div class="theme-selector-grid">
+                <button class="theme-selector-btn active" id="theme-btn-dark">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                  </svg>
+                  <span id="lbl-theme-dark">Tamna</span>
+                </button>
+                <button class="theme-selector-btn" id="theme-btn-light">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                  </svg>
+                  <span id="lbl-theme-light">Svijetla</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dish Detail Modal -->
+      <div class="modal-overlay hidden" id="dish-modal">
+        <div class="modal-card dish-detail-card glass-card">
+          <button class="close-modal" id="dish-modal-close" aria-label="Close details">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+          <div class="dish-modal-content" id="dish-modal-content">
+            <!-- Injected dynamically via TS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <div class="logo-group">
+              <svg class="flame-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="logo-text">Srce <span class="accent-text">Vatreno</span></span>
+            </div>
+            <p class="brand-subtext" id="footer-tagline">Okusi vatre i tradicije.</p>
+          </div>
+          <div class="footer-info">
+            <h4 id="footer-contact-title">Kontakt & Lokacija</h4>
+            <p id="footer-address">Ulica Vatrenih Srca 45, 10000 Zagreb, Hrvatska</p>
+            <p>Tel: +385 (0)1 4567 890</p>
+            <p>Email: info@srcevatreno.hr</p>
+          </div>
+          <div class="footer-hours">
+            <h4 id="footer-hours-title">Radno Vrijeme</h4>
+            <p id="footer-hours-week">Pon - Pet: 12:00 - 23:00</p>
+            <p id="footer-hours-weekend">Sub - Ned: 12:00 - 00:00</p>
+          </div>
+        </div>
+        <div class="footer-bottom container">
+          <span class="copyright">&copy; 2026 Srce Vatreno. All rights reserved.</span>
+          <button class="back-to-top" id="back-to-top-btn">
+            <span id="lbl-back-to-top">Natrag na vrh</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"/>
+              <polyline points="5 12 12 5 19 12"/>
+            </svg>
+          </button>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Main Module Script -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
